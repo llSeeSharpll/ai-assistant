@@ -4,7 +4,7 @@ import keyboard
 #class info
 class Info():
     def __init__(self):
-        self.driver = webdriver.Chrome(executable_path="C:\\Users\\Jad Mershad\\Desktop\\chromedriver.exe")
+        self.driver = webdriver.Chrome(executable_path="your location of chromedriver\chromedriver.exe")
 
     
 

@@ -3,7 +3,7 @@ from selenium import webdriver
 #class info
 class GoogleSearch():
     def __init__(self):
-        self.driver = webdriver.Chrome(executable_path="C:\\Users\\Jad Mershad\\Desktop\\chromedriver.exe")
+        self.driver = webdriver.Chrome(executable_path="the location of chromedriver\chromedriver.exe")
 
     def search_result(self, name):
         self.driver.get(url="https://www.google.com/")
