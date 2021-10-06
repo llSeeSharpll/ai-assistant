@@ -4,4 +4,4 @@
  
  Download chromedriver acc to your google chrome from: https://chromedriver.chromium.org/ 
  
- For models i used pyttsx3 and speachrecognition and webdriver
+ For models I used pyttsx3 and speachrecognition and webdriver
