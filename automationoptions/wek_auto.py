@@ -4,7 +4,7 @@ import keyboard
 #class info
 class Info():
     def __init__(self):
-        self.driver = webdriver.Chrome(executable_path="your location of chromedriver\chromedriver.exe")
+        self.driver = webdriver.Chrome(executable_path="C:\\Users\\Jad Mershad\\Desktop\\chromedriver.exe")
 
     
 
@@ -24,9 +24,10 @@ class Info():
         engine.say("Here what i found about" +query)
         def close():
             if keyboard.is_pressed("esc"):
+                self.driver.__exit__()
                 engine.stop()
-        engine.connect('started-word', close)
-        engine.say(readable_text)
+            engine.connect('started-word', close())
+            engine.say(readable_text)
         engine.runAndWait()
         self.driver.__exit__()
         return 1
